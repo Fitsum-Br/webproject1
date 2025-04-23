@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FirstProject </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #2f2f2f;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header .logo {
+      font-weight: bold;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: orange;
+    }
+
+    .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px 30px 80px; 
+    background-color: #121212;
+    }
+
+    .hero-img {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: flex-end;
+    }
+
+    .hero-img img {
+    max-width: 100%;
+    height: auto;
+    }
+
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      color: #F55800;
+      margin-bottom: 10px;
+    }
+
+    .hero-text h2 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .hero-text p {
+      font-size: 16px;
+      color: #ccc;
+      line-height: 1.6;
+    }
+
+    .hero-img {
+      max-width: 500px;
+    }
+
+    .social-icons {
+      position: absolute;
+      left: 10px;
+      top: 250px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .social-icons a {
+      color: #ccc;
+      font-size: 20px;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: orange;
+    }
+
+    footer {
+      background-color: #2f2f2f;
+      text-align: center;
+      padding: 20px;
+      color: #bbb;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-img {
+        margin-top: 30px;
+        width: 100%;
+      }
+
+      .social-icons {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">My Logo</div>
+    <nav>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#"><i class="fa-regular fa-envelope"></i></a>
+    </nav>
+  </header>
+
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="#"><i class="fas fa-hand-peace"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-medium"></i></a>
+  </div>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hey There.<br />I’m Alex.</h1>
+      <h2>I’m a Software Developer</h2>
+      <p>I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
+    </div>
+    <div class="hero-img">
+      <img src="image1.png" alt="Hero Illustration" style="width:85%" />
+    </div>
+  </section>
+
+  <footer>
+  </footer>
+</body>
+
+</html>
